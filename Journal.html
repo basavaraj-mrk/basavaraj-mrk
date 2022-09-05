@@ -1,0 +1,478 @@
+<html>
+    <head>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        </head>
+        <body class="container">
+            <h1> Basavaraj's Journal</h1>
+            <table class="table table-hover">
+                <thead class="bg-success">
+                    <tr>
+                        <th>Date</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+					
+					<tr>
+                        <td>5th September 2022</td>
+                        <td>
+                            <li>Today I learnt some basics of Apex Trigger by watching some videos.</li>
+							<li>Practiced some of the Triggers with Querying the data.</li>
+							<li>While practicing Trigger I have used Context Variables.</li>
+							<li>Praciced different clauses in SOQL & SOSL.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>2nd September 2022</td>
+                        <td>
+                            <li>Today I learnt some basics of Salesforce development by watching some videos.</li>
+							<li>I started writting some basic codes and some SOQL.</li>
+							<li>I learnt some basic theory of Salesforce development.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>1st September 2022</td>
+                        <td>
+                            <li>Today I tried writting fast & time based Coding & SOQL.</li>
+							<li>Udhay Sir asked us to code for Creating 2 Customers along with 2 Invoices for each Customer.</li>
+							<li>SOQL for Child to Parent and vice versa.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>31st August 2022</td>
+                        <td>
+                            <li>Today was the Project Presentation of all the teams/groups.</li>
+							<li>Our team has presented the Project of Property buying or selling.</li>
+							<li>It was good to see remaining teams project Presentation, different UI designs, Functionality etc... & all are Good.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>30th August 2022</td>
+                        <td>
+                            <li>Today I learnt about Custom Settings & Custom MetaData</li>
+							<li>Custom Settings are similar to Custom Objects, but we can not deploy Custom Settings but we can deploy Custom Metadata.</li>
+							<li>Custom Setting has 2 types they are, List Custom Setting & Hierarchy Custom Setting.</li>
+							<li>List Custom Settings is not in Salesforce usage, Instead using Custom Metadata.</li>
+							<li>If we want create different records for different Profiles then we can choose Hierarchy Custom Setting.</li>
+							<li>No need to Query the Custom Settings Instead we can use ObjectApi.getAll().values()</li>
+							<li>We can get the perticular instance by using ObjectApi.getInstance('India').</li>
+							<li>Custom Objects have the Tabs but the Custom Setting does not have</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>29th August 2022</td>
+                        <td>
+                            <li>Today's session was about Discussion regarding the Project.</li>
+							<li>Later we started working on our Project.</li>
+							<li>We added some more components, made some changes, created Automation tools etc...</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>26th August 2022</td>
+                        <td>
+                            <li>Today I learnt about JEST for Lightning Web Components.</li>
+							<li>Jest is a powerful tool with rich features for writing JavaScript tests. Use Jest to write unit tests for all of your Lightning web components.</li>
+							<li>Run Jest tests at the command line. Jest tests don’t run in a browser or connect to an org, so they run fast.</li>
+							<li>For testing the Lightning Components we have installed Nodejs and Java 8 or 11.</li>
+							<li>Similar to System.assertEqual(Exp val, Actual val, msg) in Test class, for testing Lwc component we use "expect(received).toBe(expected)".</li>
+							<li>To test how these components handle data and errors from the wire service, use the @salesforce/sfdx-lwc-jest.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>25th August 2022</td>
+                        <td>
+                            <li>Today we learnt about LMS(Lightning Message Service) in LWC.</li>
+							<li>LMS is introduced in Winter 20 by Salesforce & which is used for Communication across the DOM.</li>
+							<li>LMS allow us to communicate between VF pages and Lightning Components (Aura and LWC both) on any Lightning page. LMS API allow us to publish message throughout the lightning experience and subscribe the same message anywhere with in lightning page.</li>
+							<li>Lightning Message Service is based on a new metadata type Lightning Message Channels. We need to use Lightning Message Channel to access the Lightning Message Service API.</li>
+							<li>In LWC we can access Lightning Message Channel with the scoped module @salesforce/messageChannel. 
+In Visualforce, we can use global variable $MessageChannel. 
+In Aura, use lightning:messageChannel in your component</li>
+							<li>1st we need to create 1 default folder called as "messageChennels" and 1 file as "MyMessageChannel.messageChannel-meta.xml".</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>24th August 2022</td>
+                        <td>
+                            <li>Today's training session I learnt that creating a button to make comment for case records and used toasts to show Success message.</li>
+							<li>Later learnt about LDS in LWC.</li>
+							<li>Lightning Data Service has 3 forms & In a Lightning web component, perform operations on data and access metadata using these technologies built on Lightning Data Service they are: ○	lightning-record-edit-form, ○Lightning-record-form, ○Lightning-record-view-form.</li>
+							<li>Lightning-record-edit-form using output fields to create a record form.</li>
+							<li>Lightning-record-form we can't customize it.</li>
+							<li>Records loaded in Lightning Data Service are cached and shared across components.</li>
+							<li>Communication between Unrelated components can be done using "pubsub" model. pubsub is a Publisher & Subscriber.</li>
+							<li>Publisher will Dispatch the Event & Subscriber will handle the Event.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>23rd August 2022</td>
+                        <td>
+                            <li>Today I learnt about how to access Apex Classes using Lwc Components.</li>
+							<li>To call a method of Apex class in Lwc using 2 ways are, 1. @wire() is required to call method/property & 2. By Imperative method (mainly use on event).</li>
+							<li>The Apex class must be annotated as @auraEnabled(cacheable=true).</li>
+							<li>We can import the apex class using "import apex from @salesforce/apex/className.methodName" in JS file.</li>
+							<li>And mam gave some examples on how to call Apex class in LWC like Fetching all Accounts, fetching related Contacts etc.</li>
+							<li>By creating a button in the Cards to make the Case IsClosed to true.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>22nd August 2022</td>
+                        <td>
+                            <li>Today's training session was about Custom labels, Static Resources & Navigations</li>
+							<li>Custom labels enable developers to create multilingual applications by automatically presenting information (for example, help text or error messages) in a user's native language</li>
+							<li>Static resources allow us to upload content that you can reference in a Visualforce page, including archives (such as . zip and . jar files), images, style sheets, JavaScript, and other files. These can be used only in Salesforce Org.</li>
+							<li>A lifecycle hook is a callback method triggered at a specific phase of a component instance’s lifecycle.</li>
+							<li>constructor() is called when the component is created & which calls before the connectedCallback().</li>
+							<li>connectedCallback() which is used to interact with a component's environment</li>
+							<li>renderedCallback() is called after every render of the component.</li>
+							<li>render() is called to update the UI.</li>
+							<li>disconnectedCallback() is called when the element is removed from a document & this hook flows from parent to child.</li>
+							<li>errorCallback(error, stack) is called when a descendant component throws an error. The error argument is a JavaScript native error object, and the stack argument is a string.</li>
+							<li>The lightning/navigation service is supported only in Lightning Experience, Lightning Communities, and the Salesforce app.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>19th August 2022</td>
+                        <td>
+                            <li>Today once again watched the LWC class video and noted down some of the points.</li>
+							<li>Practiced the Examples of LWC components which were done in Yesterday's training session.</li>
+							<li>Done with the Assignment which was given.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>18th August 2022</td>
+                        <td>
+                            <li>Today's session started with LWC(Lightning Web Components).</li>
+							<li>LWC is a programming model for building lightning components, they are custom HTML elements built using HTML and modern Javascript. Modern Javascript consists of features like Shadow DOM, Custom elements etc...</li>
+							<li>Conditional Rendering: "template if:true|false={property} " "/template"</li>
+							<li>Adding One component in another component can be called as Component Composition.</li>
+							<li>Communication between Parent & Child components can be done in 2 ways, they are: 
+									By public property of child
+									By public method of child
+								</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>17th August 2022</td>
+                        <td>
+                            <li>Today's session was about the Development Module Assessment and the Project Presentation.</li>
+							<li>Assessment done well.</li>
+							<li>And yesterday we are asked to make some correction to our project.</li>
+							<li>Finally we did those corrections and our project got approved.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>16th August 2022</td>
+                        <td>
+                            <li>Today's session was about Discussion regarding the Project problems, Errors etc.</li>
+							<li>Our Project is Pizza store and the app name is Pizza Hub & in this we have created several Objects and fields related to it.</li>
+							<li>We have used Automation tool like Workflow for sending Emails to Customers, Flows for automatic records creation.</li>
+							<li>We have implemented VF page and Aura components for making UI to look better.</li>
+							<li>We have implemented Trigger for preventing the Order record to change once it is Available.</li>
+							<li>And finally we are asked to make changes in Details page and all and we are working on it.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>12th August 2022</td>
+                        <td>
+                            <li>lightning:notificationsLibrary tag for showing Notifications in Aura Components.</li>
+							<li>Notification works similar to Toast messages.</li>
+							<li>In Aura Components Helper method/bundle is used to Reuse the Code.</li>
+							<li>Tabset is used for creating tabs in Horizontal or vertical.</li>
+							<li>Navigations are done for App Home Page, Object List View Page, Custom Component.</li>
+							<li>Aura Method is used to call the JS controller of the Child Component from the Parent Component.</li>
+							<li>And had some examples on Helper method and Inheritance in Helper.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>10th August 2022</td>
+                        <td>
+                            <li>In Today's session learnt about Application event & Component event in Aura Components.</li>
+							<li>Application event is used when 2 components are independent and Component event used when there is a parent-child relationship between 2 components, event is registered in the Child Component & handled by parent component.</li>
+							<li>Lightning Data Service is used for CRUD operation.</li>
+							<li>lightning:recordForm is used for Create, Read and Edit Records.</li>
+							<li>lightning:recordViewForm is used for Displaying the Records using lightning:outputField.</li>
+							<li>lightning:recordEditForm is used for Create or Update using lightning:inputField.</li>
+							<li>Lightning:recordData is used for Create, Edit and Delete.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>9th August 2022</td>
+                        <td>
+                            <li>In Aura components setCallBack method is used to get Success or Failure Responses.</li>
+							<li>$A.enqueueAction by which Client-side calls Server-side Apex Controller method.</li>
+							<li>The Apex class should be @auraEnabled & the method should be Static.</li>
+							<li>Today we had some more examples on Aura Components like Search of Account, Contact Records etc.</li>
+							<li>By querying the records and displaying the related records.</li>
+							<li>Toasts are the message box or notification box that a developer can show according to the action of the user.</li>
+							<li>Different type of Toasts are like Success, Warning, Error etc...</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>8th August 2022</td>
+                        <td>
+                            <li>Today we learnt the new topic Aura Components.</li>
+							<li>Basically VF Page applies for Classic & Aura Components for Lightning Page.</li>
+							<li>Aura Component has interfaces like force:appHostable, flexipage:availableForAllPageTypes, flexipage:availableForRecordHome, force:lightningQuickAction, etc...</li>
+							<li>Aura components are self-contained & Reusable units of an app.</li>
+							<li>Aura Component bundles are Component, Controller, Helper, Style, Documentation, Renderer, Design, SVG.</li>
+							<li>To show Alert Dialogue box we use alert(".....") in Controller/Helper.</li>
+							<li>For binding attribute values we use Ex: {!v.add}.</li>
+							<li>For calling the controller in component we use Ex: {!c.doAdd}.</li>
+							<li>If condition in Aura --> "<aura:if></aura:if>" and else condition --> "<aura:set></aura:set>".</li>
+							<li>.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>5th August 2022</td>
+                        <td>
+                            <li>Today we learnt about SOAP API Integration, Asynchronous Operations.</li>
+							<li>SOAP API which consumes the services and uses WSDL type of files.</li>
+							<li>To convert apex classes into wsdl we have to use Web Service instead of Puclic access specifier.</li>
+                            <li>Asynchronous Operations like Batch Apex, Future Method, Queueable Apex, Schedulable Apex.</li>
+							<li>The class which implements the Database.Batchable can be executed as Batch Apex.</li>
+							<li>In Batch Apex the default batch size is 200 & it ranges from 1 to 2000 records.</li>
+							<li>5 Batch jobs can be added in queue.</li>
+							<li>To execute the Future classes we have to annotate as @future in class.</li>
+							<li>Queueable classess must implement the interface like Queueable and it has Execute method in this method Batch chaining is possible.</li>
+							<li>We can schedule a class by 2 methods they are by Configuration and by using Cron Operation.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>4th August 2022</td>
+                        <td>
+                            <li>Today we learnt about Sandbox, Deployment & Apex Integration.</li>
+                            <li>Sandbox is created in Salesforce free version website.</li>
+							<li>We have to create the Changeset to transfer the Data from Sandbox to Production.</li>
+							<li>We have to Enable the Allow Inbound Changeset in Production Org then only we can tranfer the data.</li>
+							<li>Inbound Changeset is created in Source (Sandbox) side & Outbound Changeset is created in Target (Production) side.</li>
+							<li>In Integration we got to know use of REST & SOAP API.</li>
+							<li>REST API introduced in 2000 by Roy Field.</li>
+							<li>REST API uses Rest resources --> URI for mapping.</li>
+							<li>REST API uses http methods like @httpget, @httppost, @httppatch, @httpdelete @httpput.</li>
+							<li>REST API supports xml, text & JSON.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>3rd August 2022</td>
+                        <td>
+                            <li>Today's Training session was about Visualforce Pages & Testing.</li>
+                            <li>Searching for the Account in List using VF page.</li>
+							<li>Use of AJAX functions like Action Support, Action Poller, Action Function, Action Status, Action region in VF page.</li>
+							<li>Example on Adding multiple Accounts from VF page itself.</li>
+							<li>Controller Extensions can be called in Custom Controllers.</li>
+							<li>Test classes are used for testing the Quality of the Code.</li>
+							<li>Test Class must be annotated as @isTest.</li>
+							<li>For the code written Within the tes.StartTest & test.StopTest the Governor limits are Reseted.</li>
+							<li>To test the Private class methods, the private class must be annotated as @testVisible.</li>
+							<li>To check the Expected outcome with Actual outcome have implement System.AssertEqual(Expected value, Actual value, 'Message').</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>2nd August 2022</td>
+                        <td>
+                            <li>Today's Training session started with Visualforce Pages.</li>
+                            <li>Types of Controllers used in VF pages are Standard Controller, Standard List, Custom Controller & Controller Extensions.</li>
+							<li>We can display/show VF page results on Tabs, Standard & Custom Links etc.</li>
+							<li>VF pages start with the tag like <apex:page> & Ends with </apex:page> tag.</li>
+							<li><apex:form></apex:form> this tag is used for Input & Output fields, Page Block section etc.</li>
+							<li>In Today's session we used VF page for fetching multiple Accounts into VF page, for CRUD operations etc.</li>
+							<li>CRUD operations like Create, Read, Update, Delete.</li>
+							<li>Making use of Wrapper Classes in VF page.</li>
+							<li>Use of Standard Controllers in VF pages to fetch One record along with that fetching related to that record and in multiples.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>1st August 2022</td>
+                        <td>
+                            <li>Today's Training session was about the Relationship queries using SOQL, SOSL, and Database DML Operations & Triggers.</li>
+                            <li>Searching for the perticular field in Sobjects we use SOSL.</li>
+							<li>SOSL is the search language and it gives results of multiple object.</li>
+							<li>We use Database method for Partial operation(insert/update).</li>
+							<li>We use Database.saveResults to check success & failure records.</li>
+							<li>Trigger is Synchronous Operation & which takes action when the condition/criteria satisfies.</li>
+							<li>2 type of Triggers are there, those are before Trigger & after Trigger.</li>
+							<li>Context variables like trigger.isNew, trigger.isOld, trigger.isBefore,trigger.isAfter etc.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>29th July 2022</td>
+                        <td>
+                            <li>Today's Training session was about the Collections, DML operations in Salesforce.</li>
+                            <li>I got to know about Collections like List, Set, Map.</li>
+							<li>Lists are similar to Arrays.</li>
+							<li>List provides unordered set of elements.</li>
+							<li>Set provides Ascending order of elements.</li>
+							<li>Map contains the Key & value as its member.</li>
+							<li>To print the keys we use .keySet() function & for values we use .value() function.</li>
+							<li>For checking the keys present in Map we use containsKey().</li>
+							<li>In DML operations we have Insert, Update, Delete etc.</li>
+							<li>For processing Bulk Records we use DML operation outside of for loop.</li>
+							<li>We got to know more about the different clauses used in SOQL queries.</li>
+							<li>Different clauses like WHERE, LIKE, IN, ORDER BY, GROUP BY etc.</li>
+							<li>About to call Sub Queries inside 1 SOQL query.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>28th July 2022</td>
+                        <td>
+                            <li>Today started with Coding part.</li>
+                            <li>I learnt about the Classes, Methods, Signature of methods.</li>
+							<li>Learnt about the Constructors, Parameterized Constructors, Use of this Keyword.</li>
+							<li>inheritance and use of extends in this.</li>
+							<li>Use of super() keyword in Child classes to call the Parent methods or assigning the parameters for Parent.</li>
+							<li>Abstract Classes are partially implemented and they can not be Instantiated.</li>
+							<li>Interfaces are similar to Abstract classes but they are fully Abstracted.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>27th July 2022</td>
+                        <td>
+                            <li>Today we had the Admin Module Assessment containing 45 queries.</li>
+                            <li>Again the training session starts @11 AM.</li>
+							<li>In training session discussed regarding the questions in Assessment.</li>
+							<li>And later started with the Development module.</li>
+							<li>Learnt the basic coding like display the integer, long, decimal, date & datetime in Developer console.</li>
+							<li>Learnt about access specifiers like Public, Private, Protected.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>26th July 2022</td>
+                        <td>
+                            <li>Today's topics were Reports and Dashboards, Chatter and Data Managemennt.</li>
+                            <li>In Reports we got to know about different types like Tabular, Summary, Matrix,and Joined Reports.</li>
+							<li>Dashboards: Graphical representation and Visual presentation of Reports data.</li>
+							<li>Tabular, Summary and Matrix Reports supports Dashboards but not the Joined Reports.</li>
+							<li>In Data Management we learnt about Data Import Wizard, Data Export, and Dataloader.</li>
+							<li>Data Import Wizard is an Inbuilt tool and Dataloader is an External tool.</li>
+							<li>In Data Import Wizard can process upto 50000 record and In Dataloader can process 5 million records.</li>
+							<li>Data Import Wizard supports only 4 standard objects like Account, Contacts, Leads, Solution and Campaign member.</li>
+							<li>Data Loader supports all Standard and Custom Objects.</li>
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>22nd July 2022</td>
+                        <td>
+                            <li>Today's topics were Global Actions, Automation Tools</li>
+                            <li>Creating Buttons in Global Action Ex: Create a Record, Update a Record etc & it will redirect to that page</li>
+							<li>Discussed about Automation Tools like Workflow, Process Builder and Flows</li>
+							<li>In Workflow learnt about different automated processes like Workflow Tasks, Email Alerts, Field Update, Outbound Messages</li>
+							<li>In Process Builder learnt various automated prosesses like Create a Record, Update a Record, Task, Email Alerts etc</li>
+							<li>The Flows overcome all difficulties of the Workflow and Process Builder</li>
+							<li>In Process Builder learnt about How to make Related Object Records Update, Deletion of the Records etc</li>							
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>21th July 2022</td>
+                        <td>
+                            <li>Today I learnt about Page Layout, Profile & User, Record Type, List View, Compact Layout & Buttons & Links</li>
+                            <li>In Pagelayout how to make page layout design, which fields to see, where we can place the field and can make the field required</li>
+							<li>Learnt about Profiles creation and creating users for the profiles</li>
+							<li>In Record type learnt about different layouts, Multi layouts for different Profiles</li>
+							<li>What are fields has to be seen when the Object is opened can be done by List View</li>
+							<li>Learnt How to create custom Button & Links for redirecting ton another page, for Creating/Updating a Record by clicking the custom Button or Quick Action Button</li>							
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>20th July 2022</td>
+                        <td>
+                            <li>Today I learnt about One to Many & Many to Many Relationships</li>
+                            <li>User stories on Relationships</li>
+							<li>Learnt about Cross Object Formula Field, Lookup Filters</li>
+							<li>Practiced some of User Stories for Validation Rule </li>
+							<li>In Validation Rule I got to know the functions like ISNUMBER, ISNULL, ISBLANK, etc</li>														
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>19th July 2022</td>
+                        <td>
+                            <li>Today's training session was good</li>
+                            <li>I learnt about Picklist, Multiselect Picklist, Global Picklist</li>
+							<li>I learnt about Dependent Picklist or Field Dependency</li>
+							<li>How to add Pictures while creating records of Contacts</li>
+							<li>Learnt about Formula fields and did formula fields exercises </li>
+							<li>Introduction to Relationships in Salesforce</li>							
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td>18th July 2022</td>
+                        <td>
+                            <li>1st we started with Salesforce, CRM Introduction</li>
+                            <li>I got to know Why Salesforce is used and Different Salesforce Editions</li>
+							<li>How Org can be created in Salesforce</li>
+							<li>I learnt What are Standard and Custom Objects and Fields</li>
+							<li>How the Custom Objects, Fields can be created</li>
+							<li>Lead Conversions: Web to Lead form and Web to Case form</li>
+							<li>I learnt about Page Layouts, Picklist, Multiselect Picklist</li>
+                        </td>
+                    </tr>
+						
+					<tr>
+						<td>15th July 2022</td>
+						<td>
+							<li>Make the revision/practices code in Excel Macros</li>
+							<li>Suggested by Udhay downloaded and install java software</li>
+							<li>Make the practice of java code in the notepad++ and display the output in command prompt.</li>
+							<li>Downloaded books.jar and pasted that file into c:\mirketa and make the server stop and start in command prompt by checking output wheather the output will be given and when the server is stop in command prompt.</li>
+							<li>Make the practises of addition,substraction,multiplication and division in http://localhost:8765</li>
+						</td>	
+					</tr>
+					
+					<tr>
+						<td>14th July 2022</td>
+						<td>
+							<li>I learnt  tables tags to the tablet display table content in user interface</li>
+							<li>I  learnt basics of Agile and JIRA thought by Udhya in details.</li>
+							<li>I learnt stages of a project handling in JIRA like to do,Develoment,QA, UAT and production.</li>
+							<li>I learnt Excel Macros,another way of coding in the Excel work book.</li>
+							<li>By making use of JSON (Array) in Excel macrons. </li>
+						</td>
+					</tr>
+					
+                    <tr>
+                        <td>13th July 2022</td>
+                        <td>
+                            <li>Rajeev's 1hr session was thought provoking</li>
+                            <li>I Learnt about what are Backlog grooming,sprints,Retrospective.</li>
+                        </td>
+                    </tr>
+					
+                </tbody>
+            </table>
+        </body>
+    </html>
